@@ -25,11 +25,11 @@ export default function Counter() {
       <div>{num}</div>
       <Wrapper>
         <input ref={incRef} />
-        <button onClick={handleInc}>increase</button>
+        <button onClick={handleInc}>+</button>
       </Wrapper>
       <Wrapper>
         <input ref={decRef} />
-        <button onClick={handleDec}>decrease</button>
+        <button onClick={handleDec}>-</button>
       </Wrapper>
       <button onClick={remove}>Remove</button>
     </Container>
@@ -39,8 +39,9 @@ export default function Counter() {
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  width: 300px;
-  height: 500px;
+  gap: 3px;
+  width: 200px;
+  height: 300px;
 `;
 
 const Wrapper = styled.div`
@@ -54,6 +55,6 @@ const Wrapper = styled.div`
   }
 
   button {
-    width: 80px;
+    width: 50px;
   }
 `;
