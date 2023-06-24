@@ -3,6 +3,7 @@ import { create } from "zustand";
 type state = {
   num: number;
   increase: (amount: number) => void;
+  decrease: (amount: number) => void;
   remove: () => void;
 };
 
